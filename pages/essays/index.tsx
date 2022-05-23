@@ -1,8 +1,15 @@
 import type { NextPage } from 'next';
 import { Header } from '../../components/Header';
 import Footer from '../../components/Footer';
+import { GetStaticProps } from 'next';
+import { getAllPosts } from '../../lib/api';
+import { EssayType } from '../../types/essay';
 
-const Essays: NextPage = () => {
+type IndexProps = {
+  essays: EssayType[];
+};
+
+const Essays: NextPage<IndexProps> = ({ essays }) => {
   return (
     <>
       <Header />
@@ -19,10 +26,33 @@ const Essays: NextPage = () => {
           <h3 className="font-light text-left text-4xl mt-0.5">
             Index
           </h3>
+          <div className="flex flex-col space-y-5">
+            {essays.map((essay) => {
+              return (
+                <article>
+                  <p>{essay.title}</p>
+                  <p>{essay.slug}</p>
+                </article>
+              );
+            })}
+          </div>
         </div>
       </div>
     </>
   );
+};
+
+// NextJs will pre-render this page at build time using the props returned by the getStatic Props function.
+export const getStaticProps: GetStaticProps = async () => {
+  const essays = getAllPosts([
+    'date',
+    'description',
+    'slug',
+    'title',
+  ]);
+  return {
+    props: { essays },
+  };
 };
 
 export default Essays;

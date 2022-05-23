@@ -5,7 +5,7 @@ const Essays = () => {
         <h2 className="font-black my-10 text-[#555555]">
           RECENT ESSAYS
         </h2>
-        <div className="flex flex-row w-full flex-wrap"></div>
+        <div className="flex flex-row w-full flex-wrap">{}</div>
       </div>
     </div>
   );
