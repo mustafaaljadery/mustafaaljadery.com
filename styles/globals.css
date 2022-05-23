@@ -24,6 +24,10 @@ a {
   src: url(../fonts/MULISH-VARIABLEFONT_WGHT.TTF)
 }
 
+.transform-middle{
+  transform: translate(-50%,-50%);
+}
+
 .font-black{
   font-family: Mulish Black;
 }
@@ -56,6 +60,6 @@ a {
   font-family: Mulish Regular;
 }
 
-.font-family{
+.font-semibold{
   font-family: SemiBold;
 }
