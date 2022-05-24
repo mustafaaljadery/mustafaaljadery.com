@@ -2,6 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  h1 {
+    @apply mb-6 text-3xl font-semibold;
+  }
+  h2 {
+    @apply text-2xl font-semibold;
+  }
+  p {
+    @apply mb-4;
+  }
+  a {
+
+  }
+}
+
 html,
 body {
   padding: 0;
@@ -61,5 +76,5 @@ a {
 }
 
 .font-semibold{
-  font-family: SemiBold;
+  font-family: Mulish SemiBold;
 }

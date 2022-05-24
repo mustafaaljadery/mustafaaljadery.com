@@ -1,7 +1,9 @@
 export type EssayType ={
   date?: string;
-  description?: string; 
+  abstract?: string; 
   image?:string;
+  keywords?:string;
+  length?:string;
   slug:string;
   title:string; 
 }

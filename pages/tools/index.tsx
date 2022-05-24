@@ -6,8 +6,13 @@ const Tools: NextPage = () => {
   return (
     <div>
       <Header />
-      <div className="h-screen">
-        <p>Test Test Test</p>
+      <div className="flex flex-col justify-center items-center h-[95vh]">
+        <p className="text-[#7C7C7C] font-semibold text-sm">
+          End of the page.
+        </p>
+        <p className="text-[#C6C6C6] font-semibold text-sm">
+          More tools may be coming soon.
+        </p>
       </div>
       <Footer />
     </div>

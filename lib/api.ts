@@ -1,4 +1,4 @@
-import fs from 'fs';
+import fs from "fs";
 import { join } from 'path';
 import matter from 'gray-matter';
 import { POSTS_PATH } from '../utils/mdxUtils';
@@ -12,7 +12,7 @@ export function getPostSlugs():string[] {
 }
 
 export function getPostBySlug(slug:string, fields:string[] = []): PostItems{
-    const realSlug = slug.replace(/\.mdx$/, '');
+  const realSlug = slug.replace(/\.mdx$/, '');
   const fullPath = join(POSTS_PATH, `${realSlug}.mdx`);
   const fileContents = fs.readFileSync(fullPath, 'utf8');
   const { data, content } = matter(fileContents);
