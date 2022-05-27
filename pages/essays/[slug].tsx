@@ -15,6 +15,8 @@ import EssayLayout, {
 import { MetaProps } from '../../types/layout';
 import { EssayType } from '../../types/essay';
 import { postFilePaths, POSTS_PATH } from '../../utils/mdxUtils';
+import style from '../../styles/essay.module.css';
+import { getAllPosts } from '../../lib/api';
 
 const components = {
   Head,
@@ -25,28 +27,27 @@ const components = {
 type EssayPageProps = {
   source: MDXRemoteSerializeResult;
   frontMatter: EssayType;
+  essays: EssayType[];
 };
 
 const EssayPage = ({
   source,
   frontMatter,
+  essays,
 }: EssayPageProps): JSX.Element => {
   const customMeta: MetaProps = {
-    title: `${frontMatter.title} - Mustafa Aljadery`,
+    title: `${frontMatter.title}`,
     keywords: frontMatter.keywords,
     abstract: frontMatter.abstract,
-    image: `${WEBSITE_HOST_URL}${frontMatter.image}`,
+    image: `${frontMatter.image}`,
     date: frontMatter.date,
     length: frontMatter.length,
     type: 'article',
   };
   return (
-    <EssayLayout customMeta={customMeta}>
-      <article>
-        <h1 className="mb-3 text-gray-900 dark:text-white">
-          {frontMatter.title}
-        </h1>
-        <div className="prose dark:prose-dark">
+    <EssayLayout customMeta={customMeta} moreEssays={essays}>
+      <article className={style.essay}>
+        <div className="w-3/4">
           <MDXRemote {...source} components={components} />
         </div>
       </article>
@@ -57,6 +58,7 @@ const EssayPage = ({
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const postFilePath = path.join(POSTS_PATH, `${params?.slug}.mdx`);
   const source = fs.readFileSync(postFilePath);
+  const essays = getAllPosts(['title', 'slug']);
 
   const { content, data } = matter(source);
 
@@ -69,6 +71,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     props: {
       source: mdxSource,
       frontMatter: data,
+      essays,
     },
   };
 };

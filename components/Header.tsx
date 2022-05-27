@@ -53,12 +53,14 @@ export const Header = () => {
   return (
     <header className="flex flex-col bg-white justify-center items-center w-full py-4 sticky top-0">
       <div className="flex flex-row justify-between items-between w-10/12">
-        <div className="h-[30px] flex flex-row space-x-5">
-          <Image src="/logo.svg" width={30} height={30} />
-          <p className="font-black my-auto text-sm">
-            MUSTAFA ALJADERY
-          </p>
-        </div>
+        <Link href="/">
+          <a className="h-[30px] flex flex-row space-x-5">
+            <Image src="/logo.svg" width={30} height={30} />
+            <p className="font-black my-auto text-sm">
+              MUSTAFA ALJADERY
+            </p>
+          </a>
+        </Link>
         <div className="flex flex-row my-auto space-x-10 text-sm">
           <Link href="/">
             <a

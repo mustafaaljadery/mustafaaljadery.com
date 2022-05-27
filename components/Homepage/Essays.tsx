@@ -13,7 +13,7 @@ const Essays = ({ essays }: IndexProps) => {
           RECENT ESSAYS
         </h2>
         <div className="w-full flex flex-row flex-wrap">
-          {essays.map((essay) => {
+          {essays.slice(0, 6).map((essay) => {
             return (
               <div key={essay.slug} className="p-3 hover:p-0 w-1/3">
                 <div

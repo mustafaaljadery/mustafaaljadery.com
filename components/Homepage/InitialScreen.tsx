@@ -12,9 +12,7 @@ const InitialScreen = () => {
       <div className="my-auto flex flex-col justify-center items-center space-y-10">
         <div className="flex flex-row space-x-9">
           <Image src="/logo.svg" width={50} height={50} />
-          <h1 className="font-extrabold text-5xl">
-            Mustafa Aljadery
-          </h1>
+          <h1 className="font-bold text-5xl">Mustafa Aljadery</h1>
         </div>
         <div className="flex flex-row space-x-10 font-medium">
           <Link href={data.twitter}>

@@ -1,0 +1,26 @@
+@font-face{
+  font-family: Mulish;
+  src: url(../fonts/MULISH-VARIABLEFONT_WGHT.TTF)
+}
+
+.transform-middle{
+  transform: translate(-50%,-50%);
+}
+
+
+.essay h2 {
+  font-family: Mulish;
+  font-size: 2.25rem; /* 36px */
+  line-height: 2.5rem; /* 40px */
+  margin-top: 2.5rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.essay p {
+  font-family: Mulish Light; 
+  font-size: 1.125rem; /* 18px */
+  line-height: 1.75rem; /* 28px */
+  margin-top: 1.5rem; /* 32px */
+  color: #353535;
+}

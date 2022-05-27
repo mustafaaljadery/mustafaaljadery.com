@@ -37,11 +37,13 @@ const Essays: NextPage<IndexProps> = ({ essays }) => {
                   <>
                     <article key={essay.slug} className="">
                       <div className="flex flex-row space-x-8">
-                        <img
-                          src="/images/test.png"
-                          className="w-auto"
-                        />
-                        <div className="flex flex-col space-y-1.5 my-auto">
+                        <div className="w-1/3">
+                          <img
+                            src="/images/test.png"
+                            className="w-auto"
+                          />
+                        </div>
+                        <div className="flex flex-col space-y-1.5 w-2/3 my-auto">
                           <Link href={`/essays/${essay.slug}`}>
                             <a className="font-semibold text-[#404040] text-2xl hover:underline hover:italic hover:underline-offset-2">
                               {essay.title}
@@ -76,11 +78,13 @@ const Essays: NextPage<IndexProps> = ({ essays }) => {
                 <>
                   <article key={essay.slug} className="">
                     <div className="flex flex-row space-x-8">
-                      <img
-                        src="/images/test.png"
-                        className="w-auto"
-                      />
-                      <div className="flex flex-col space-y-1.5 my-auto ">
+                      <div className="w-1/3">
+                        <img
+                          src="/images/test.png"
+                          className="w-auto"
+                        />
+                      </div>
+                      <div className="flex flex-col space-y-1.5 w-2/3 my-auto ">
                         <Link href={`/essays/${essay.slug}`}>
                           <a className="font-semibold text-[#404040] text-2xl hover:underline hover:italic hover:underline-offset-2">
                             {essay.title}
