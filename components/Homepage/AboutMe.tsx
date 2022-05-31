@@ -33,6 +33,25 @@ const AboutMe = () => {
           <img src="/mustafa.png" className="w-1/4 mr-32" />
         </div>
       </div>
+      <div className="w-1/3 flex flex-col justify-between items-between mt-24">
+        <h2 className="text-left w-full text-3xl font-bold">
+          Skills
+        </h2>
+        <div className="flex-1 flex flex-row space-x-32 mt-3">
+          <div className="flex-col space-y-1 text-lg font-light">
+            <p>Product Design</p>
+            <p>Front-End Web Engineering</p>
+            <p>Back-End and API Engineering</p>
+            <p>Data Mining</p>
+          </div>
+          <div className="flex-1 flex flex-col space-y-1 text-lg font-light">
+            <p>Data Analysis</p>
+            <p>A/B Growth Testing</p>
+            <p>Survey/Testing Management</p>
+            <p>Brand Strategy</p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

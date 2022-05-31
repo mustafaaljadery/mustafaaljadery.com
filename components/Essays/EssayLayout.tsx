@@ -64,17 +64,8 @@ const EssayLayout = ({
             />
           </div>
           <hr className="h-px mt-8" />
-          {moreEssays?.slice(0, 2).map((essay) => {
-            return <div>{essay.title}</div>;
-          })}
-
-          <div className="flex flex-row mt-12 mb-20">
-            <div className="w-1/3 mt-14">
-              <p className="font-semibold">Contents</p>
-              <hr className="h-px w-1/2 mt-0.5" />
-            </div>
-
-            <div className="w-2/3">{children}</div>
+          <div className="flex flex-col justify-center items-center">
+            <div className="w-2/3 mt-12 mb-20">{children}</div>
           </div>
         </main>
       </div>
