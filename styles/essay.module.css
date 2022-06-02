@@ -24,3 +24,17 @@
   margin-top: 1.5rem; /* 32px */
   color: #353535;
 }
+
+.essay h4{
+  font-family: Mulish Semibold;
+  margin-top: 2rem;
+  font-size: 24px; 
+
+}
+
+.essay li {
+  font-family: Mulish Light;
+  margin-top: 0.5rem;
+  font-size: 1.125rem;
+  color: #353535;
+}

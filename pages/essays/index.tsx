@@ -39,7 +39,7 @@ const Essays: NextPage<IndexProps> = ({ essays }) => {
                       <div className="flex flex-row space-x-8">
                         <div className="w-1/3">
                           <img
-                            src="/images/test.png"
+                            src={`/images/${essay.slug}.png`}
                             className="w-auto"
                           />
                         </div>
@@ -80,7 +80,7 @@ const Essays: NextPage<IndexProps> = ({ essays }) => {
                     <div className="flex flex-row space-x-8">
                       <div className="w-1/3">
                         <img
-                          src="/images/test.png"
+                          src={`/images/${essay.slug}.png`}
                           className="w-auto"
                         />
                       </div>

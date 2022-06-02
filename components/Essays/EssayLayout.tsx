@@ -65,7 +65,7 @@ const EssayLayout = ({
           </div>
           <hr className="h-px mt-8" />
           <div className="flex flex-col justify-center items-center">
-            <div className="w-2/3 mt-12 mb-20">{children}</div>
+            <div className="ml-10 w-2/3 mt-12 mb-32">{children}</div>
           </div>
         </main>
       </div>

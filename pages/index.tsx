@@ -7,6 +7,7 @@ import Essays from '../components/Homepage/Essays';
 import { getAllPosts } from '../lib/api';
 import { GetStaticProps } from 'next';
 import { EssayType } from '../types/essay';
+import Projects from '../components/Homepage/Projects';
 
 type IndexProps = {
   essays: EssayType[];
@@ -19,6 +20,7 @@ const Home: NextPage<IndexProps> = ({ essays }) => {
       <InitialScreen />
       <AboutMe />
       <Essays essays={essays} />
+      <Projects />
       <Footer />
     </>
   );

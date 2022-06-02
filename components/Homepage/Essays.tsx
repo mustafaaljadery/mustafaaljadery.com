@@ -21,7 +21,7 @@ const Essays = ({ essays }: IndexProps) => {
                   className="h-full shadow p-5 bg-[#F9F9FB] rounded-xl flex flex-col justify-center items-center"
                 >
                   <img
-                    src="/images/test.png"
+                    src={`/images/${essay.slug}.png`}
                     className="w-auto rounded mt-4"
                   />
                   <Link href={`/essays/${essay.slug}`}>
