@@ -25,7 +25,7 @@ const AboutMe = () => {
             .
           </p>
           <p className="font-semibold text-sm sm:text-base">
-            Most strongly proficient in typescript, python, and C++.
+            Most strongly proficient in Typescript, Python, and C++.
             Advanced calculus and linear algebra enthusiast.{' '}
           </p>
         </div>
