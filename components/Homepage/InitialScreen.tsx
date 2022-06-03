@@ -8,13 +8,18 @@ const underlineAnimation: string =
 
 const InitialScreen = () => {
   return (
-    <div className="flex flex-col h-[95vh] items-center">
+    <div className="flex flex-col h-[95vh] items-center -mt-12 md:mt-0">
       <div className="my-auto flex flex-col justify-center items-center space-y-10">
-        <div className="flex flex-row space-x-9">
-          <Image src="/logo.svg" width={50} height={50} />
-          <h1 className="font-bold text-5xl">Mustafa Aljadery</h1>
+        <div className="flex flex-row space-x-5 md:space-x-9">
+          <img
+            className="h-[40px] w-[40px] sm:h-[42px] sm:w-[42px] md:w-[50px] md:h-[50px]"
+            src="/logo.svg"
+          />
+          <h1 className="font-bold text-3xl sm:text-4xl my-auto md:text-5xl">
+            Mustafa Aljadery
+          </h1>
         </div>
-        <div className="flex flex-row space-x-10 font-medium">
+        <div className="flex flex-row space-x-5 sm:space-x-7 md:space-x-10 text-sm sm:text-base font-medium">
           <Link href={data.twitter}>
             <a
               target="_blank"
@@ -55,7 +60,10 @@ const InitialScreen = () => {
         <div className="flex flex-col space-y-3">
           <p className="font-bold text-[#7C7C7C]">Scroll.</p>
           <div className="mt-2 flex flex-col justify-center items-center">
-            <Image src="/arrow.svg" width={15} height={40} />
+            <img
+              src="/arrow.svg"
+              className="w-[12px] h-[32px] md:w-[15px] md:h-[40px]"
+            />
           </div>
         </div>
       </div>

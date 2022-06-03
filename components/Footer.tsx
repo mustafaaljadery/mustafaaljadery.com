@@ -7,7 +7,7 @@ const underlineAnimation: string =
 const Footer = () => {
   return (
     <footer className="bg-black flex flex-col items-center justify-center">
-      <div className="w-10/12 flex flex-row justify-between items-between mt-10">
+      <div className="w-11/12 md:w-10/12 flex flex-col-reverse md:flex-row justify-between items-between mt-10">
         <div className="flex flex-col space-y-6">
           <Link href={`mailto:${data.email}`}>
             <a className="text-white font-medium underline underline-offset-8 decoration-[#D4D4D4] decoration-1">
@@ -18,12 +18,12 @@ const Footer = () => {
             © Mustafa Aljadery 2022. All rights reserved.
           </p>
         </div>
-        <div className="my-auto flex flex-row space-x-10 text-white font-medium">
+        <div className="my-auto mb-4 md:mb-0 flex flex-row justify-around items-between md:justify-start md:items-start md:space-x-10 text-white font-medium">
           <Link href={data.twitter}>
             <a
               target="_blank"
               rel="noopener noreferrer"
-              className={underlineAnimation}
+              className={`md:${underlineAnimation}`}
             >
               Twitter
             </a>
@@ -32,7 +32,7 @@ const Footer = () => {
             <a
               target="_blank"
               rel="noopener noreferrer"
-              className={underlineAnimation}
+              className={`md:${underlineAnimation}`}
             >
               Linkedin
             </a>
@@ -41,7 +41,7 @@ const Footer = () => {
             <a
               target="_blank"
               rel="noopener noreferrer"
-              className={underlineAnimation}
+              className={`md:${underlineAnimation}`}
             >
               {' '}
               Github
@@ -49,7 +49,7 @@ const Footer = () => {
           </Link>
         </div>
       </div>
-      <p className="mt-10 text-white mb-10 font-regular">
+      <p className="mt-5 md:mt-10 text-white mb-10 text-sm md:text-base text-center md:text-left font-regular w-11/12 md:w-auto">
         Everything on this site is designed and built with{' '}
         <span role="img" aria-label="heart">
           ❤️

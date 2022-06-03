@@ -8,14 +8,17 @@ type IndexProps = {
 const Essays = ({ essays }: IndexProps) => {
   return (
     <div className="flex flex-col justify-center items-center">
-      <div className="w-10/12 flex my-10 mb-24 flex-col justify-center items-center">
-        <h2 className="font-black text-lg my-10 text-[#555555]">
+      <div className="w-11/12 md:w-10/12 flex my-10 mb-16 md:mb-24 flex-col justify-center items-center">
+        <h2 className="font-black text-lg my-6 md:my-10 text-[#555555]">
           RECENT ESSAYS
         </h2>
         <div className="w-full flex flex-row flex-wrap">
           {essays.slice(0, 6).map((essay) => {
             return (
-              <div key={essay.slug} className="p-3 hover:p-0 w-1/3">
+              <div
+                key={essay.slug}
+                className="mt-6 md:mt-0 md:p-3 hover:p-0 w-full md:w-1/2 xl:w-1/3"
+              >
                 <div
                   key={essay.slug}
                   className="h-full shadow p-5 bg-[#F9F9FB] rounded-xl flex flex-col justify-center items-center"
@@ -26,14 +29,14 @@ const Essays = ({ essays }: IndexProps) => {
                   />
                   <Link href={`/essays/${essay.slug}`}>
                     <a
-                      className={`mt-6 font-semibold text-[#404040] text-xl w-2/3 text-center hover:underline hover:underline-offset-1 hover:italic`}
+                      className={`mt-6 font-semibold text-[#404040] text-xl sm:text-2xl md:text-xl md:w-2/3 text-center hover:underline hover:underline-offset-1 hover:italic`}
                     >
                       {essay.title}
                     </a>
                   </Link>
                   <div className="mt-auto w-full flex flex-col justify-end items-end">
                     <Link className="" href={`/essays/${essay.slug}`}>
-                      <a className="flex flex-row space-x-1">
+                      <a className="flex flex-row space-x-1 mt-1">
                         <span className="text-sm font-bold underline underline-offset-2 hover:italic">
                           Continue
                         </span>

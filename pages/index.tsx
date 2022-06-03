@@ -8,6 +8,7 @@ import { getAllPosts } from '../lib/api';
 import { GetStaticProps } from 'next';
 import { EssayType } from '../types/essay';
 import Projects from '../components/Homepage/Projects';
+import Head from 'next/head';
 
 type IndexProps = {
   essays: EssayType[];
@@ -16,6 +17,13 @@ type IndexProps = {
 const Home: NextPage<IndexProps> = ({ essays }) => {
   return (
     <>
+      <Head>
+        <title>Mustafa Aljadery's Personal Website</title>
+        <meta
+          name="viewport"
+          content="initial-scale=1.0, width=device-width"
+        />
+      </Head>
       <HomepageHeader />
       <InitialScreen />
       <AboutMe />
