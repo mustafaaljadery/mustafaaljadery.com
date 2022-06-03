@@ -10,7 +10,7 @@ export const HomepageHeader = () => {
         <div className="flex flex-col md:flex-row my-auto space-y-1 md:space-y-0 md:space-x-10 text-sm">
           <Link href="/">
             <a
-              className={`font-regular text-[#9D9D9D] text-sm md:text-base hover:underline hover:underline-offset-1  ${
+              className={`font-regular text-[#9D9D9D] hover:underline hover:underline-offset-1  ${
                 pathname === '/'
                   ? 'italic underline underline-offset-1 text-[#535353]'
                   : ''
