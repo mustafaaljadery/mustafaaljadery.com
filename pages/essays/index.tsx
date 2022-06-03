@@ -16,7 +16,7 @@ const Essays: NextPage<IndexProps> = ({ essays }) => {
   return (
     <>
       <Head>
-        <title>Mustafa Aljadery's Essays</title>
+        <title>Mustafa Aljadery&apos;s Essays</title>
         <meta
           name="viewport"
           content="initial-scale=1.0, width=device-width"
