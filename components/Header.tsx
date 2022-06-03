@@ -52,7 +52,7 @@ export const Header = () => {
 
   return (
     <header className="flex flex-col bg-white justify-center items-center w-full py-4 md:sticky top-0">
-      <div className="flex flex-col space-y-5 md:space-y-0 md:flex-row justify-between items-between w-10/12">
+      <div className="flex flex-col space-y-5 md:space-y-0 md:flex-row justify-between items-between w-11/12 md:w-10/12">
         <Link href="/">
           <a className="h-[30px] flex flex-row text-sm md:text-base space-x-2 md:space-x-5">
             <img
