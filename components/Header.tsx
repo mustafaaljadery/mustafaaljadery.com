@@ -6,7 +6,7 @@ export const HomepageHeader = () => {
   const { pathname } = useRouter();
   return (
     <header className="flex flex-col bg-white justify-center items-center w-full py-[21px] md:sticky top-0">
-      <div className="flex flex-col md:flex-row md:justify-end md:items-end w-11/12 md:w-10/12 md:-mt-2">
+      <div className="flex flex-col md:flex-row md:justify-end md:items-end w-11/12 md:w-10/12 md:-mt-1">
         <div className="flex flex-col md:flex-row my-auto space-y-1 md:space-y-0 md:space-x-10 text-sm">
           <Link href="/">
             <a
