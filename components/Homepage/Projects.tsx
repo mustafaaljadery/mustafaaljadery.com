@@ -56,7 +56,7 @@ const Projects = () => {
               Field Trip Records Front-End
             </h3>
             <p className="mt-2 text-base md:text-lg w-full md:w-3/4 xl:w-1/2 text-center font-medium text-[#BABABA]">
-              Designed about built the front-end site for music record
+              Designed and built the front-end site for music record
               label Field Trip Recordings. Designed using Figma, and
               built using NextJS, Tailwind, Framer Motion, and Styled
               Components.
