@@ -47,7 +47,7 @@ const InitialScreen = () => {
               Github
             </a>
           </Link>
-          <Link href={`mailto:${data.email}`}>
+          <Link href={`mailto:mustafa@mustafaaljadery.com`}>
             <a
               target="_blank"
               rel="noreferrer noopener"
